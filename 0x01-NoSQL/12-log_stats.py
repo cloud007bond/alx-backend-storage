@@ -1,10 +1,7 @@
 #!/usr/bin/env python3
 """ Nginx logs stored in MongoDB
 """
-
-
 from pymongo import MongoClient
-
 
 def log_stats():
     """ Database: logs
@@ -27,7 +24,6 @@ def log_stats():
     print(f"\tmethod PATCH: {patch}")
     print(f"\tmethod DELETE: {delete}")
     print(f"{path} status check")
-
 
 if __name__ == "__main__":
     log_stats()
